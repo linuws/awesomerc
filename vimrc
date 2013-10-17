@@ -18,6 +18,8 @@ set hlsearch        " highlight searches
 set incsearch       " do incremental searching
 set ignorecase
 
+set smartindent
+
 set sm
 
 if &term =~ "xterm"
