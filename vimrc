@@ -22,6 +22,9 @@ set smartindent
 
 set sm
 
+let g:syntastic_python_flake8_args="--ignore=E501"
+
+
 if &term =~ "xterm"
   "256 color --
   let &t_Co=256
