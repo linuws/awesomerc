@@ -39,4 +39,7 @@ if &term =~ "xterm"
   endif
 endif
 
-
+" Commands
+let mapleader = ","
+nmap <silent> <leader>* :nohlsearch<cr>
+nnoremap <leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
