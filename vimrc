@@ -51,8 +51,14 @@ nmap <leader>w :w<cr>
 nnoremap <leader><leader> <c-^>
 
 
+" Splits
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
-
+set splitbelow
+set splitright
 
 " highlight trailing whitespace
 highlight ExtraWhitespace ctermbg=red guibg=red
