@@ -21,6 +21,8 @@ set ignorecase
 set smartindent
 
 set sm
+set wildignore=*.o,*.obj,*.bak,*.exe,*.pyc,*.png,*.jpg,*.gif,*.DS_Store,*.egg-info/**,*.db,**/_build/**,**/external/**,**/CACHE/**,**/node_modules/**,**/bower_components/**,**/build/**,*.tar.gz,*.tar.bz2
+
 
 let g:syntastic_python_flake8_args="--ignore=E501"
 
@@ -43,3 +45,19 @@ endif
 let mapleader = ","
 nmap <silent> <leader>* :nohlsearch<cr>
 nnoremap <leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
+nmap <leader>p :CtrlP<cr>
+nmap <leader>b :CtrlPBuffer<cr>
+nmap <leader>w :w<cr>
+nnoremap <leader><leader> <c-^>
+
+
+
+
+
+" highlight trailing whitespace
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
