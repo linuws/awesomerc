@@ -26,6 +26,9 @@ set wildignore=*.o,*.obj,*.bak,*.exe,*.pyc,*.png,*.jpg,*.gif,*.DS_Store,*.egg-in
 
 let g:syntastic_python_flake8_args="--ignore=E501"
 
+" make it possible to easily create new files in the same directories as
+" " existing files
+cabbr <expr> %% expand('%:p:h')
 
 if &term =~ "xterm"
   "256 color --
