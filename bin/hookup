@@ -1,0 +1,55 @@
+#!/bin/bash
+
+RC_DIR=$HOME/.awesomerc
+BACKUP_DESTINATION=$HOME/.awesomerc_backup
+
+_link() {
+    filename=$1
+    symlink_name=$2
+
+    # Does the target already exist and is not a symlink?
+    if [ -e $symlink_name ] && [ ! -h $symlink_name ]; then
+        mkdir -p $BACKUP_DESTINATION
+        echo "Moving existing $symlink_name to ~/$BACKUP_DESTINATION"
+        mv $symlink_name $BACKUP_DESTINATION
+    fi
+
+    echo "Setting up file $symlink_name -> $filename"
+    rm -f $symlink_name
+    ln -sf $filename $symlink_name
+}
+
+
+link_config() {
+    _link $RC_DIR/$1 ~/.$1
+}
+
+link_bin() {
+    _link $RC_DIR/bin/$1 ~/bin/$1
+}
+
+link_config zshrc
+link_config vimrc
+link_config vim
+link_config gitconfig
+
+
+#mkdir -p $HOME/bin
+#link_bin prc_install
+#link_bin prc_update
+#link_bin cleanup.sh
+#link_bin keep
+#link_bin push_migration_numbers.py
+#link_bin markdown
+#link_bin trans
+#link_bin poedit
+#link_bin sublmod
+#link_bin mirror_tests
+#link_bin sphinx-autobuild-html
+
+# Do not bother if ssh-copy-id is provided
+which ssh-copy-id > /dev/null || link_bin ssh-copy-id
+
+echo "All good!"
+echo " - Use rehash to update PATH with new commands"
+echo " - Use chsh -s /bin/zsh to change shell"
