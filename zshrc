@@ -1,6 +1,6 @@
 export AWESOMERC=$HOME/.awesomerc
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3.3
-export EDITOR=vim
+#export EDITOR=vim
 
 autoload -U colors && colors
 setopt PROMPT_SUBST
