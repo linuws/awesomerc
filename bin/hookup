@@ -48,7 +48,7 @@ link_config gitconfig
 #link_bin sphinx-autobuild-html
 
 # Do not bother if ssh-copy-id is provided
-which ssh-copy-id > /dev/null || link_bin ssh-copy-id
+#which ssh-copy-id > /dev/null || link_bin ssh-copy-id
 
 echo "All good!"
 echo " - Use rehash to update PATH with new commands"
