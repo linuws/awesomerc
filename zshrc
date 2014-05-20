@@ -6,12 +6,12 @@ autoload -U colors && colors
 setopt PROMPT_SUBST
 
 ### OH-MY-ZSH
-ZSH=$HOME/.awesomerc/.oh-my-zsh
+ZSH=$HOME/.awesomerc/oh-my-zsh
 COMPLETION_WAITING_DOTS="true"
 DISABLE_AUTO_UPDATE="true"
-plugins=(git osx pip github)
+plugins=(sublime wd git osx github)
 
-#source $ZSH/oh-my-zsh.sh
+source $ZSH/oh-my-zsh.sh
 
 source $AWESOMERC/autoenv
 
