@@ -8,10 +8,10 @@ set nocompatible    " use vim defaults
 
 set number
 set expandtab
-set ts=4
+set ts=2
 set backspace=indent,eol,start " allow backspacing over everything in insert     mode
 set numberwidth=4   " line numbering takes up 5 spaces
-set shiftwidth=4    " numbers of spaces to (auto)indent
+set shiftwidth=2    " numbers of spaces to (auto)indent
 set title
 
 set hlsearch        " highlight searches
@@ -46,7 +46,7 @@ endif
 
 " Commands
 let mapleader = ","
-nmap <silent> <leader>* :nohlsearch<cr>
+nmap <silent> <leader>* :nohl<cr>
 nnoremap <leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
 nmap <leader>p :CtrlP<cr>
 nmap <leader>b :CtrlPBuffer<cr>

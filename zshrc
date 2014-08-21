@@ -9,7 +9,7 @@ setopt PROMPT_SUBST
 ZSH=$HOME/.awesomerc/oh-my-zsh
 COMPLETION_WAITING_DOTS="true"
 DISABLE_AUTO_UPDATE="true"
-plugins=(sublime wd git osx github)
+plugins=(sublime wd git osx)
 
 source $ZSH/oh-my-zsh.sh
 

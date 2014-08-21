@@ -1,2 +1,3 @@
 alias l="ls -laF"
 alias ll="ls -alF --color=auto"
+alias tb="titanium build -p ios"
