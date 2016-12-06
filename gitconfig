@@ -1,0 +1,11 @@
+[user]
+	name = Linus Andersson
+	email = linus.andersson@infor.com
+[core]
+	editor = vim
+[credential]
+	helper = osxkeychain
+[alias]
+  yolo = reset --hard
+[gui]
+	encoding = utf-8

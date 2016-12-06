@@ -9,18 +9,19 @@ setopt PROMPT_SUBST
 ZSH=$HOME/.awesomerc/oh-my-zsh
 COMPLETION_WAITING_DOTS="true"
 DISABLE_AUTO_UPDATE="true"
-plugins=(sublime wd git osx)
+plugins=(wd git osx)
 export LANG=en_US.UTF-8
 
 source $ZSH/oh-my-zsh.sh
 
-source $AWESOMERC/autoenv
+# Will be removed sometime later
+#source $AWESOMERC/autoenv
 
 # Source local zshrc
 source $HOME/.zshrc.local
 
 for x in $AWESOMERC/zsh/*; do
-    source $x
+  source $x
 done
 
 
