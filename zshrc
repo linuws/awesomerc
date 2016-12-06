@@ -1,5 +1,5 @@
 export AWESOMERC=$HOME/.awesomerc
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3.3
+#export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3.3
 #export EDITOR=vim
 
 autoload -U colors && colors

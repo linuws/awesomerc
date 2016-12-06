@@ -19,7 +19,7 @@ function user_host_path_info() {
     fi
 }
 
-PROMPT='$(virtualenv_info)$(my_git_prompt_info)$(user_host_path_info)%(!.#.\$) '
+#PROMPT='$(my_git_prompt_info)$(user_host_path_info)%(!.#.\$) '
 
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[green]%}["
-ZSH_THEME_GIT_PROMPT_SUFFIX="] %{$reset_color%}"
+#ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[green]%}["
+#ZSH_THEME_GIT_PROMPT_SUFFIX="] %{$reset_color%}"
