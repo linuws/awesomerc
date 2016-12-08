@@ -15,6 +15,7 @@ plugins=(wd git osx)
 export LANG=en_US.UTF-8
 
 source $ZSH/oh-my-zsh.sh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Will be removed sometime later
 #source $AWESOMERC/autoenv
@@ -32,3 +33,5 @@ source $HOME/.zshrc.local
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+export N_PREFIX="$HOME/.n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
