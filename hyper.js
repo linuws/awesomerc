@@ -86,7 +86,9 @@ module.exports = {
     'hyperterm-paste',
     'hyperterm-cursor',
     'hyperterm-tab-icons',
-    'hyper-simple-highlight-active-session'
+    'hyper-simple-highlight-active-session',
+    'hyper-broadcast',
+    'hyperterm-tabs'
   ],
 
   // in development, you can create a directory under
