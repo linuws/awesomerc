@@ -63,8 +63,8 @@ module.exports = {
     // for environment variables
     env: {},
 
-    // set to false for no bell
-    bell: 'SOUND',
+    // set to false for no bell or 'SOUND' for sound
+    bell: false,
 
     // if true, selected text will automatically be copied to the clipboard
     copyOnSelect: false
@@ -85,7 +85,8 @@ module.exports = {
     'hyper-snazzy',
     'hyperterm-paste',
     'hyperterm-cursor',
-    'hyperterm-tab-icons'
+    'hyperterm-tab-icons',
+    'hyper-simple-highlight-active-session'
   ],
 
   // in development, you can create a directory under
