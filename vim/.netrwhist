@@ -1,4 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/Users/landersson1/repos/rhythm-api-fork/product-api'
 let g:netrw_dirhist_2='/Users/landersson1/repos/rhythm-api-fork/product-api/cms/test'
+let g:netrw_dirhist_3='/Users/linus/Workspace/service-application/test'
+let g:netrw_dirhist_4='/Users/linus/.ssh'

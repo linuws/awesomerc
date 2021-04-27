@@ -1,3 +1,5 @@
 alias l="ls -hlaF"
 alias ll="ls -halF --color=auto"
 alias tb="titanium build -p ios"
+
+alias dlog='f() { docker container logs $1 --tail 100 -f };f'

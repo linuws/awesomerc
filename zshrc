@@ -29,7 +29,7 @@ source $HOME/.zshrc.local
 #for x in $AWESOMERC/zsh/*; do
 #  source $x
 #done
-
+source $AWESOMERC/zsh/aliases
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
