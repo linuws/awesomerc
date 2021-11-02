@@ -20,11 +20,19 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # Will be removed sometime later
 #source $AWESOMERC/autoenv
 
-autoload -U promptinit; promptinit
-prompt pure
+#autoload -U promptinit; promptinit
+#prompt pure
+fpath+=('/Users/linus/.n/lib/node_modules/pure-prompt/functions')
+fpath+=$HOME/.zsh/pure
 
 # Source local zshrc
 source $HOME/.zshrc.local
+
+
+autoload -Uz promptinit
+promptinit
+prompt pure
+
 
 #for x in $AWESOMERC/zsh/*; do
 #  source $x
